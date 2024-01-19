@@ -19,7 +19,7 @@ type cartridgeT struct{
 	projectileID 
 	subprojectileID 
 }
-
+///couldnt even finish working on the firearm & weapon platform assets even though i had months to finish this, it's so joever
 type weapon struct{
 	weaponID
 	capableofbeingattachment bool
