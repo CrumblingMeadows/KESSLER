@@ -1,6 +1,6 @@
 //convert to ascii @ later point, replit does not support images; only text-based characters
 ---
-11/01/2024AD fuck it we ball using ebiten, alternate option of Azul3D as im using my own 3d assets anyways
+11/01/2024ADusing ebiten, alternate option of Azul3D as im using my own 3d assets anyways
 ---
 //maybe have 3d model for poses to have a referemce for ASCII conversion, 3d model firearms at some point - note: GAUSS/EML firearms, 10x23, 9x54, 57x76.2 grenade, 15x50,15x150,23x54 light shotgun (heavy shotgun capable of 57x76.2 grenades & flechette, flechette point detonate) - maybe also 90x1270 & 90x1778 (90x1270 unguided, 90x1905 laser guidance),155x1524 ATGM
 //how would the ammo system function? its limited thus requiring supply - maybe checkpoints can intake resources to produce specified ammo cartridges over time
