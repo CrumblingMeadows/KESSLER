@@ -1,0 +1,12 @@
+entrypoint = "*.go"
+
+modules = ["go"]
+
+[gitHubImport]
+requiredFiles = [".replit"]
+
+[deployment]
+build = ["sh", "-c", "go build *.go"]
+run = ["sh", "-c", "./main"]
+ignorePorts = false
+deploymentTarget = "gce"

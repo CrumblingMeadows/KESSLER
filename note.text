@@ -1,0 +1,88 @@
+//convert to ascii @ later point, replit does not support images; only text-based characters
+---
+11/01/2024AD fuck it we ball using ebiten, alternate option of Azul3D as im using my own 3d assets anyways
+---
+//maybe have 3d model for poses to have a referemce for ASCII conversion, 3d model firearms at some point - note: GAUSS/EML firearms, 10x23, 9x54, 57x76.2 grenade, 15x50,15x150,23x54 light shotgun (heavy shotgun capable of 57x76.2 grenades & flechette, flechette point detonate) - maybe also 90x1270 & 90x1778 (90x1270 unguided, 90x1905 laser guidance),155x1524 ATGM
+//how would the ammo system function? its limited thus requiring supply - maybe checkpoints can intake resources to produce specified ammo cartridges over time
+//OOOOOOOOOOOOOOOOOOOOOOOOO 
+//idea for intro - nebula corridor shoots down protag.'s vessel during re-entry with either a 155 flechette-point-detonate or 750 point-detonate, along with WIDOW relativistic defense 
+	Also what tech should protag faction be at? Early relativistic spaceflight? so Nebula Corridor tech has a major impact on the course of the plot (Ex. gravitational manipulative exotic particles, EM & particle shielding, Plasma Sensor reduction [iirc plasma modules could work for stealth aircraft and reducing EM signature, ex. radar and infared],also quasi-dimensional threaders for absolute-instant FTL, relativistic point-defense and munitions)
+//hostile enemies: automated humanoid combat frames, Szyvla-Class infantry (similar to Halo's Forerunner sentinels), bio-weapons deployed by local parties, neither Nebula Corridor (nor the Unity Defense Initiative or Nova Industries for that matter), boss fight against HICOM Noir? 
+//POSSIBLE ENDINGS:
+Nebula Corridor intervenes in local timeline's perpetuated warfare
+Nebula Corridor technology retrieved by local factions (Player determines how much is retrieved)
+Nova Industry & Unity Initiative suceeds in coverup, retrieves their respective assets
+Nova Industry fuckin GLASSES the Threshold system with EVISCRATOR-Class particle weaponry
+//ye it basically connects to my main worldbuilding project regarding Nova Industries - this is late into their story in which Nebula Corridor is established for interdimensional bullshittery 
+//yeah if i flesh this setting enough i might get too obsessed and have to publish an actually good version like years after i actually finish this in golang
+
+---
+//sprites needed for player character(s)
+*character appearance (obviously)
+*angles for: aiming in 8 directions
+movement in 8 directions
+crouching behind cover (4-8 directions)
+breaching door animation (actually do we even need this since Nebula Corridor, Unity Defense Initiative, and Nova Industries all use sliding blast doors that dont even function on a hinge lol)
+melee animations
+sliding animations
+reloading animations
+inspecting firearm animation
+jamming animation (1/24000+)
+unjamming animation
+bleeding animations
+administering medication
+death animations (fuckin EVAPORATED or uuuuuh decapitated
+numerous projectiles shredding the head apart)
+shooting from corners / corner peaking
+npc interactions
+would they need to eat?
+other interaction animations
+---
+
+ALSO
+have player be able to move in multiple directions with either mouse or arrow keys
+
+also ability to change perspective angle horizontally 
+---
+FIREARMS I NEED TO MODEL INNNNNNNNNNNNNNNN
+9x54 GAUSS bullpup rifle (different configs, ex under-rail mounted grenade launcher, angled grip, variable barrel lengths, ex. 20",16",12",8"0) 9x54 LMG variant with 20" barrel and box Mag (52 or 56 cartridge cap for 4 or 2-round bursts)
+10x23 SMG, 9x54 SMG, variable barrel lengthm 6",8',10",12"
+10x23 Handgun
+10x50 Handcannon
+10x150 Anti-Material, 10x150 HMG
+57x76.2 individual grenade launcher or under-barrel mount (2 different models i have to convert into sprites from multiple perspectives AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA),57x76.2 Heavy shotgun, select fire? for use with exo-skeletons and humanoid combat frames,Husks,Voidborne, etc
+
+---man-portable AT launcher--
+90x1270 RPG, twin and single mounts, 90x1778 guided variant with FCS, twin and singular
+155x1524 ATGM launcher, twin and singular launcher with FCS
+--melee
+HV Tungsten-Titanium Nanocarbide (WtiC compound) - (Alloy pronounced Wttic/Wittick, Wittix, date attached to indicate what nanocarbide OR picocarbide's being utilized)
+HV Tungsten-Titanium Ynx-Compound Allo (WTi[YX], Witty, Wittix/Witticks or just Ynx) - found in more secure/confidential arsenals because you dont what your average infantry unit you just recruited 8 months ago to get their hands on a high-density high-frequency combat knife capable of shredding through tungsten
+---
+maybe 76.2 mortar? idk probably not the player doesnt need that since its mostly interior combat & CQB
+---
+CONTROLS
+WASD, self explanatory
+should be able to detect simultaneous inputs for combination of north/south with east/west for diagonal movement
+somehow detect mouse movement if a boolean is false for mouse-based aiming
+reload,inspect,customize for weaponry
+E - interact
+C- Crouch
+Z- Prone
+[placeholder] - switch between standard mouse and aiming mouse
+LMB- Fire
+RMB- Use optics (iron sights, holographic, etc.)
+N-NV (night vision, not to be confused with the NV Envy lolololrofllmaosofuckingfunnytrustmepleaselaugh)
+
+---
+also, optional but i plan on having a fog system to dictate player's effective range when using firearms
+how tf would i get 2nd player to aim? i dont have a 2nd mouse to be able to test secondary inputs
+maybe have an autolock system like AC4A - where yea itd mostly stay on target BUT takes into account recoil and youd have to stop firing to negate muzzle climb and regain accuracy, also for fasting moving targets youd have to actively move your FOV just like an AC4A unless you wanna lose lock (also no we are not adding quick boost/turning)
+
+
+
+utilize ebiten raycasting example as to establish a line of sight system for players and hostiles, essentially resulting in fog of war
+
++- tileY & tileX for Z axis emulation
+
+///walls will be different layer below tile so we dont have to worry too much about making them transparent
