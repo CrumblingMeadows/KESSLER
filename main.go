@@ -101,10 +101,6 @@ func introcutscene () {
 /*
 }
 
-func INTRO() {
-	p("WHY DOESNT THIS RUN")
-}
-
 func MENU() {
 	p("HUH")
 	s(&userinputfloat)
